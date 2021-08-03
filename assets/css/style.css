@@ -14,17 +14,20 @@ body {
 }
 
 a {
-  color: #2487ce;
+  color: #187dc5;
   text-decoration: none;
 }
 
 a:hover {
-  color: #382d2d;
+  color: #ffffff;
   text-decoration: none;
 }
 
 h1, h2, h3, h4, h5, h6 {
   font-family: "Raleway", sans-serif;
+}
+html {
+  scroll-behavior: smooth;
 }
 
 /*--------------------------------------------------------------
@@ -37,7 +40,7 @@ h1, h2, h3, h4, h5, h6 {
   right: 15px;
   bottom: 15px;
   z-index: 996;
-  background: #2487ce;
+  background: #590D22;
   width: 40px;
   height: 40px;
   border-radius: 4px;
@@ -51,7 +54,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .back-to-top:hover {
-  background: #3e9bdd;
+  background: #fcd9e8;
   color: #fff;
 }
 
@@ -79,7 +82,7 @@ h1, h2, h3, h4, h5, h6 {
   position: fixed;
   top: calc(50% - 30px);
   left: calc(50% - 30px);
-  border: 6px solid #2487ce;
+  border: 6px solid #FF4D6D;
   border-top-color: #fff;
   border-bottom-color: #fff;
   border-radius: 50%;
@@ -121,29 +124,42 @@ h1, h2, h3, h4, h5, h6 {
 --------------------------------------------------------------*/
 #header {
   transition: all 0.5s;
-  background:rgba(41,41,41,255);
+  background:none;
   z-index: 997;
-  padding: 15px 0;
-  border-bottom: 1px solid #e6f2fb;
+  padding: 1px 0;
 }
 
 #header.header-scrolled {
+  background:#FF4D6D;
   border-color: #fff;
-  box-shadow: 0px 2px 15px rgba(18, 66, 101, 0.08);
+  box-shadow: 0px 2px 15px rgba(0, 0, 0, .18);
 }
 
 #header .logo {
-  font-size: 28px;
-  margin: 0;
+  font-size: 42px;
+  margin: 0;  
   padding: 0;
-  line-height: 1;
-  font-weight: 600;
-  letter-spacing: 0.5px;
-  font-family: 'Agency FB Bold', arial;
+  margin-top: 8px;
+  line-height: 0;
+  font-weight: 550;
+  letter-spacing: 3px;
+  font-family: 'Agency FB', arial;
 }
 
+
 #header .logo a {
-  color:#fbfbfb;
+  color:#f7f7f7;
+}
+
+#header .logosmall a{
+  color: rgb(236, 236, 236);
+  
+  font-size: 22px;
+  align-content: flex-start;
+  
+}
+#header .u{
+  color: #11dbcf;
 }
 
 #header .logo img {
@@ -152,7 +168,7 @@ h1, h2, h3, h4, h5, h6 {
 
 @media (max-width: 992px) {
   #header .logo {
-    font-size: 28px;
+    font-size: 38px;
   }
 }
 
@@ -209,7 +225,7 @@ h1, h2, h3, h4, h5, h6 {
 
 .navbar .getstarted:hover {
   color: #fff;
-  background: #5c6474;
+  background: #ff8fa3;
 }
 
 .navbar .dropdown ul {
@@ -380,16 +396,17 @@ h1, h2, h3, h4, h5, h6 {
 --------------------------------------------------------------*/
 #hero {
   width: 100%;
-  height: 100vh;
+  height: 150vh;
   position: relative;
-  background: url("../img/hero-bg.jpg") top center;
+  background: url("../img/bgimg/dl.beatsnoop.com-1627744809.jpg") top center;
   background-size: cover;
   position: relative;
+  transition: all 0.3s ease-in-out;
 }
 
 #hero:before {
   content: "";
-  background: rgba(255, 255, 255, 0.8);
+  background: rgba(189, 22, 22, 0);
   position: absolute;
   bottom: 0;
   top: 0;
@@ -398,20 +415,29 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 #hero .container {
-  padding-top: 80px;
+  padding-top: 2%;
 }
 
 #hero h1 {
+  
   margin: 0;
-  font-size: 56px;
+  font-size: 46px;
   font-weight: 700;
   line-height: 72px;
-  color: #292929;
+  color: #ffefee;
+  font-family: "Poppins", sans-serif;
+}
+#hero h3 {
+  margin: 0;
+  font-size: 46px;
+  font-weight: 700;
+  line-height: 20px;
+  color: #ffefee;
   font-family: "Poppins", sans-serif;
 }
 
 #hero h2 {
-  color: #5e5e5e;
+  color: #ffefee;
   margin: 10px 0 0 0;
   font-size: 22px;
 }
@@ -425,17 +451,18 @@ h1, h2, h3, h4, h5, h6 {
   padding: 14px 50px;
   border-radius: 5px;
   transition: 0.5s;
-  margin-top: 30px;
+  margin-top: 5px;
   color: #fff;
-  background:#292929;
+  background:#FF4D6D;
 }
 
 #hero .btn-get-started:hover {
-  background:  #5c6474;
+  background:  #ff8fa3;
 }
 
 #hero .icon-boxes {
-  margin-top: 100px;
+  margin-top: 50px;
+
 }
 
 #hero .icon-box {
@@ -481,7 +508,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 #hero .icon-box:hover .title a {
-  color:#cccccc;
+  color:#fc5098;
 }
 
 @media (min-width: 1024px) {
@@ -492,21 +519,29 @@ h1, h2, h3, h4, h5, h6 {
 
 @media (max-height: 800px) {
   #hero {
+    background-attachment: fixed;
     height: auto;
   }
 }
 
 @media (max-width: 992px) {
   #hero {
-    height: auto;
+    background: url("../img/bgimg/dl.beatsnoop.com-1627744809\ -\ Copy.jpg") top center;
+    background-position:80% 0%;
+    background-attachment:fixed;
+    height: 2400px;
   }
   #hero h1 {
+    margin-top: 100%;
     font-size: 28px;
     line-height: 36px;
   }
   #hero h2 {
     font-size: 18px;
     line-height: 24px;
+  }
+  #hero .btn-get-started {
+    margin-bottom: 10px;
   }
 }
 
@@ -519,7 +554,7 @@ section {
 }
 
 .section-bg {
-  background-color: #cccccc;
+  background-color: #ffcae3;
 }
 
 .section-title {
@@ -569,7 +604,7 @@ section {
   left: 0;
   top: 2px;
   font-size: 20px;
-  color: #2487ce;
+  color: #FF4D6D;
   line-height: 1;
 }
 
@@ -605,6 +640,7 @@ section {
 --------------------------------------------------------------*/
 .counts {
   padding: 60px 0;
+  background-color:#FFF0F3;
 }
 
 .counts .count-box {
@@ -1010,9 +1046,11 @@ section {
 # Cta
 --------------------------------------------------------------*/
 .cta {
-  background: #292929;
+  background: #FF758F;
   background-size: cover;
   padding: 60px 0;
+  border-radius: 60px;
+  margin-top: 1%;
 }
 
 .cta h3 {
@@ -1074,7 +1112,7 @@ section {
 }
 
 .portfolio #portfolio-flters li:hover, .portfolio #portfolio-flters li.filter-active {
-  color: #cccccc;
+  color: #fc5098;
 }
 
 .portfolio #portfolio-flters li:last-child {
@@ -1090,7 +1128,7 @@ section {
 
 .portfolio .portfolio-wrap::before {
   content: "";
-  background:rgba(204,204,204,0.9);
+  background:rgba(252,217,232,0.9);
   position: absolute;
   left: 30px;
   right: 30px;
@@ -1539,11 +1577,11 @@ section {
 
 .contact .info i {
   font-size: 20px;
-  color: #2b2b2b;
+  color: #fff;
   float: left;
   width: 44px;
   height: 44px;
-  background: #acabab;
+  background:#FF4D6D;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -1571,8 +1609,8 @@ section {
 }
 
 .contact .info .email:hover i, .contact .info .address:hover i, .contact .info .phone:hover i {
-  background: #acabab;
-  color: #fff;
+  background: #ffe6f0;
+  color: rgb(0, 0, 0);
 }
 
 .contact .php-email-form {
@@ -1586,7 +1624,7 @@ section {
 
 .contact .php-email-form .error-message {
   display: none;
-  color: #fff;
+  color: #2b2b2b;
   background: #ed3c0d;
   text-align: left;
   padding: 15px;
@@ -1735,7 +1773,7 @@ section {
 #footer {
   color: #444444;
   font-size: 14px;
-  background: #acabab;
+  background: #ffe6f0;
   box-shadow: 0px 2px 15px rgba(18, 66, 101, 0.08);
 }
 
@@ -1784,7 +1822,7 @@ section {
 
 #footer .footer-top .footer-links ul i {
   padding-right: 2px;
-  color: #2487ce;
+  color: #fc1d74;
   font-size: 18px;
   line-height: 1;
 }
@@ -1808,7 +1846,7 @@ section {
 
 #footer .footer-top .footer-links ul a:hover {
   text-decoration: none;
-  color: #2487ce;
+  color: #fc1d74;
 }
 
 #footer .footer-newsletter {
@@ -1868,7 +1906,7 @@ section {
 #footer .social-links a {
   font-size: 18px;
   display: inline-block;
-  background: #2487ce;
+  background: #feb1d1;
   color: #fff;
   line-height: 1;
   padding: 8px 0;
@@ -1881,7 +1919,7 @@ section {
 }
 
 #footer .social-links a:hover {
-  background: #000000;
+  background: #fcd9e8;
   color: #fff;
   text-decoration: none;
 }
