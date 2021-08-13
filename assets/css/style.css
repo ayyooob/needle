@@ -1081,6 +1081,48 @@ section {
   background: #fff;
   color: #25D366;
 }
+/*--------------------------------------------------------------
+# How its Work
+--------------------------------------------------------------*/
+
+#hw-img{
+ margin-top: -205px;
+ margin-bottom: -175px;
+ height: 110vh;
+ position: relative;
+ background: url("../img/hwitworks/how-it-work-5.png") top center;
+ background-size: cover;
+ position: relative;
+}
+
+@media (min-width: 1024px) {
+  #hw-img {
+    background-attachment: scroll;
+  }
+}
+
+@media (max-height: 800px) {
+  #hw-img {
+    background-attachment: fixed;
+    height: auto;
+  }
+}
+@media (max-width: 992px) {
+  #hw-img {
+    background: url("../img/hwitworks/mob-hwrk-7.png") top center;
+    background-position:center;
+    background-attachment:scroll;
+    background-repeat: no-repeat;
+    height: 1050px;
+  }
+  #hw-img h1 {
+    margin-top: 100%;
+    font-size: 28px;
+    line-height: 36px;
+    color: #111;
+  }
+  
+}
 
 /*--------------------------------------------------------------
 # Portfolio
@@ -1719,7 +1761,7 @@ section {
 --------------------------------------------------------------*/
 .breadcrumbs {
   padding: 15px 0;
-  background: #f8fbfe;
+  background: #FFF0F3;
   min-height: 40px;
   margin-top: 72px;
 }
@@ -1754,8 +1796,124 @@ section {
   color: #1a5e90;
   content: "/";
 }
+.appoiment{
+  background-color: rgb(255, 255, 255); width: 100%;
+  height: 750px; border-radius: 20px;
+}
+.main-block {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #fff;
+  }
+  form {
+  width: 100%;
+  padding-top: 20px;
+  
+  }
+  fieldset {
+  border: none;
+  border-top: 1px solid #fc5098;
+  
+  }
+  .account-details, .personal-details {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  }
+  .account-details >div, .personal-details >div >div {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+  }
+  .account-details >div, .personal-details >div, input, label {
+  width: 100%;
+  }
+  label {
+  padding: 0 5px;
+  text-align: right;
+  vertical-align: middle;
+  }
+  input {
+  padding: 5px;
+  vertical-align: middle;
+  }
+  .checkbox {
+  margin-bottom: 10px;
+  }
+  select, .children, .gender, .bdate-block {
+  width: calc(100% + 26px);
+  padding: 5px 0;
+  }
+  select {
+  background: transparent;
+  }
+  .gender input {
+  width: auto;
+  } 
+  .gender label {
+  padding: 0 5px 0 0;
+  } 
+  .bdate-block {
+  display: flex;
+  justify-content: space-between;
+  }
+  .birthdate select.day {
+  width: 35px;
+  }
+  .birthdate select.mounth {
+  width: calc(100% - 94px);
+  }
+  .birthdate input {
+  width: 38px;
+  vertical-align: unset;
+  }
+  .checkbox input, .children input {
+  width: auto;
+  margin: -2px 10px 0 0;
+  }
+  .checkbox a {
+  color: #fc5098;
+  }
+  .checkbox a:hover {
+  color: #fc5098;
+  }
+  button {
+  width: 100%;
+  padding: 10px 0;
+  margin: 10px auto;
+  border-radius: 5px; 
+  border: none;
+  background: #FF4D6D; 
+  font-size: 14px;
+  font-weight: 600;
+  color: #fff;
+  }
+  button:hover {
+  background: #FF758F;
+  }
+  @media (min-width: 568px) {
+    
+  .account-details >div, .personal-details >div {
+  width: 50%;
+  }
+  label {
+  width: 40%;
+  }
+  input {
+  width: 60%;
+  }
+  select, .children, .gender, .bdate-block {
+  width: calc(60% + 16px);
+  }
+  }
 
 @media (max-width: 768px) {
+  .appoiment{
+    background-color: rgb(255, 255, 255); width: 100%;
+    height: 1050px; border-radius: 20px;
+    margin-top: -25px;
+  }
   .breadcrumbs .d-flex {
     display: block !important;
   }
