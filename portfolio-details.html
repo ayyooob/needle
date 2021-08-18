@@ -205,11 +205,13 @@
   <script>
     $(".submit-form").submit((e)=>{
             e.preventDefault()
+            $("#preloader").fadeIn();
             $.ajax({
                 url:"https://script.google.com/macros/s/AKfycbxxPoXELSTX0yop9LixqTahDVaa8yNe_is4h932HNdjKhf6AfZI_3Y7xodnw7d-Va9f_Q/exec",
                 data:$("#submit-form").serialize(),
                 method:"post",
                 success:function (response){
+                    $("#preloader").fadeOut();
                     swal("Good job!", "we will contact you SOON🥰", "success")
                       .then(result=> window.location.reload());
                     //alert("Form submitted successfully")
