@@ -28,6 +28,7 @@
 
   <!-- Template Main CSS File -->
   <link href="assets/css/style.css" rel="stylesheet">
+  <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
 
   <!-- =======================================================
   * Template Name: OnePage - v4.3.0
@@ -133,7 +134,7 @@
                     <input type="checkbox" name="checkbox"><span>I want to recelve personallzed offers by your site</span>
                   </div>
               </fieldset>
-              <button type="submit" href="/">Submit</button>
+              <button type="submit" onclick="validation();" href="/">Submit</button>
             </form>
           </div>
 
@@ -202,6 +203,9 @@
   <div id="preloader"></div>
   <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
   <script>
+    function validation(){
+      swal("Good job!", "we will contact you SOON🥰", "success");
+    }
    
     $(".submit-form").submit((e)=>{
             e.preventDefault()
@@ -210,7 +214,8 @@
                 data:$("#submit-form").serialize(),
                 method:"post",
                 success:function (response){
-                    alert("Form submitted successfully")
+                    //alert("Form submitted successfully")
+                    swal("Hello world!");
                     window.location.reload()
                     //window.location.href="https://google.com"
                 },
