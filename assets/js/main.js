@@ -160,7 +160,8 @@
   let preloader = select('#preloader');
   if (preloader) {
     window.addEventListener('load', () => {
-      $("#preloader").fadeOut();
+      //$("#preloader").fadeOut();
+      document.getElementById('preloader').style.display = "none";
     });
   }
 
